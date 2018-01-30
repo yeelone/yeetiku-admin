@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Table } from 'antd'
 import { request } from '../../utils'
 import lodash from 'lodash'
@@ -100,9 +101,9 @@ class DataTable extends React.Component {
 DataTable.propTypes = {
   fetch: PropTypes.object,
   rowKey: PropTypes.string,
-  pagination: React.PropTypes.oneOfType([
-    React.PropTypes.bool,
-    React.PropTypes.object,
+  pagination: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.object,
   ]),
   columns: PropTypes.array,
   dataSource: PropTypes.array,

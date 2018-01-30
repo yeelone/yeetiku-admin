@@ -1,5 +1,6 @@
 //该组件作废
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Form, Input, InputNumber, Radio, Modal } from 'antd'
 import RecordList from './RecordList'
 const FormItem = Form.Item

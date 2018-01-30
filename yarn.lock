@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+"@babel/helper-module-imports@^7.0.0-beta.34":
+  version "7.0.0-beta.38"
+  resolved "http://registry.npm.taobao.org/@babel/helper-module-imports/download/@babel/helper-module-imports-7.0.0-beta.38.tgz#1b3a6dd9105cc0c7fc0d67d44a08706eb4a506a1"
+  dependencies:
+    "@babel/types" "7.0.0-beta.38"
+    lodash "^4.2.0"
+
+"@babel/types@7.0.0-beta.38":
+  version "7.0.0-beta.38"
+  resolved "http://registry.npm.taobao.org/@babel/types/download/@babel/types-7.0.0-beta.38.tgz#2ce2443f7dc6ad535a67db4940cbd34e64035a6f"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.2.0"
+    to-fast-properties "^2.0.0"
+
 acorn-jsx@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"
@@ -45,51 +60,51 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "http://registry.npm.taobao.org/ansi-styles/download/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-antd@^2.9.1:
-  version "2.10.0"
-  resolved "http://registry.npm.taobao.org/antd/download/antd-2.10.0.tgz#45cfd7ce9501589604fe24f0701cffda50446308"
+antd@^3.1.6:
+  version "3.1.6"
+  resolved "http://registry.npm.taobao.org/antd/download/antd-3.1.6.tgz#042e9f4a13e304a25283e59d999d09cb85c0c8d4"
   dependencies:
-    array-tree-filter "~1.0.0"
+    array-tree-filter "^2.0.0"
     babel-runtime "6.x"
     classnames "~2.2.0"
+    create-react-class "^15.6.0"
     css-animation "^1.2.5"
     dom-closest "^0.2.0"
+    enquire.js "^2.1.1"
     lodash.debounce "^4.0.8"
-    moment "^2.18.1"
-    object-assign "~4.1.0"
-    omit.js "^0.1.0"
+    moment "^2.19.3"
+    omit.js "^1.0.0"
     prop-types "^15.5.7"
-    rc-animate "~2.3.0"
-    rc-calendar "~8.1.0"
-    rc-cascader "~0.11.0"
-    rc-checkbox "~1.5.0"
-    rc-collapse "~1.7.0"
-    rc-dialog "~6.5.0"
-    rc-dropdown "~1.4.8"
-    rc-editor-mention "~0.6.11"
-    rc-form "~1.3.0"
-    rc-input-number "~3.4.4"
-    rc-menu "~5.0.9"
-    rc-notification "~1.4.0"
-    rc-pagination "~1.8.7"
-    rc-progress "~2.1.0"
-    rc-radio "~2.0.0"
-    rc-rate "~2.1.0"
-    rc-select "~6.8.0"
-    rc-slider "~7.0.0"
-    rc-steps "~2.5.0"
-    rc-switch "~1.4.2"
-    rc-table "~5.2.13"
-    rc-tabs "~7.3.0"
-    rc-time-picker "~2.4.0"
-    rc-tooltip "~3.4.2"
-    rc-tree "~1.5.0"
-    rc-tree-select "~1.9.0"
-    rc-upload "~2.3.0"
-    rc-util "^4.0.1"
-    react-lazy-load "^3.0.10"
-    react-slick "~0.14.2"
-    shallowequal "^0.2.2"
+    rc-animate "^2.4.1"
+    rc-calendar "~9.4.0"
+    rc-cascader "~0.12.0"
+    rc-checkbox "~2.1.1"
+    rc-collapse "~1.7.5"
+    rc-dialog "~7.1.0"
+    rc-dropdown "~2.1.0"
+    rc-editor-mention "^1.0.2"
+    rc-form "^2.1.0"
+    rc-input-number "~4.0.0"
+    rc-menu "~6.2.0"
+    rc-notification "~3.0.0"
+    rc-pagination "~1.14.0"
+    rc-progress "~2.2.2"
+    rc-rate "~2.4.0"
+    rc-select "~7.5.0"
+    rc-slider "~8.5.0"
+    rc-steps "~3.0.0"
+    rc-switch "~1.6.0"
+    rc-table "~6.1.0"
+    rc-tabs "~9.1.2"
+    rc-time-picker "~3.2.1"
+    rc-tooltip "~3.7.0"
+    rc-tree "~1.7.0"
+    rc-tree-select "~1.12.0"
+    rc-upload "~2.4.0"
+    rc-util "^4.0.4"
+    react-lazy-load "^3.0.12"
+    react-slick "~0.16.0"
+    shallowequal "^1.0.1"
     warning "~3.0.0"
 
 argparse@^1.0.7:
@@ -98,9 +113,13 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-array-tree-filter@^1.0.0, array-tree-filter@~1.0.0:
+array-tree-filter@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/array-tree-filter/download/array-tree-filter-1.0.1.tgz#0a8ad1eefd38ce88858632f9cc0423d7634e4d5d"
+
+array-tree-filter@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/array-tree-filter/download/array-tree-filter-2.0.0.tgz#20fbc2d5a0de83242c0a9eb90894d4bfb7e2a69e"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -162,9 +181,11 @@ babel-plugin-dva-hmr@^0.3.2:
   version "0.3.2"
   resolved "http://registry.npm.taobao.org/babel-plugin-dva-hmr/download/babel-plugin-dva-hmr-0.3.2.tgz#10fe0fc4b9ebb3be5ae3295c5cdf8f0a60facbdb"
 
-babel-plugin-import@^1.1.1:
-  version "1.1.1"
-  resolved "http://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.1.1.tgz#98977e6e9cef92bffef04bb1f291c44039fe21c6"
+babel-plugin-import@^1.2.1:
+  version "1.6.3"
+  resolved "http://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.6.3.tgz#f4deeac51ff9f997c9cf38e8d7d7b9142504eaf5"
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0-beta.34"
 
 babel-plugin-transform-runtime@^6.9.0:
   version "6.23.0"
@@ -180,12 +201,19 @@ babel-polyfill@^6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@6.x, babel-runtime@^6.11.6, babel-runtime@^6.22.0, babel-runtime@^6.9.2:
+babel-runtime@6.x, babel-runtime@^6.22.0, babel-runtime@^6.9.2:
   version "6.23.0"
   resolved "http://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
+
+babel-runtime@^6.23.0, babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "http://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
 
 babel-traverse@^6.0.20:
   version "6.24.1"
@@ -214,7 +242,7 @@ babylon@^6.0.18, babylon@^6.15.0:
   version "6.17.0"
   resolved "http://registry.npm.taobao.org/babylon/download/babylon-6.17.0.tgz#37da948878488b9c4e3c4038893fa3314b3fc932"
 
-balanced-match@^0.4.1, balanced-match@^0.4.2:
+balanced-match@^0.4.1:
   version "0.4.2"
   resolved "http://registry.npm.taobao.org/balanced-match/download/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
 
@@ -319,7 +347,7 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.4.0, core-js@^2.4.1:
+core-js@^2.4.0:
   version "2.4.1"
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.4.1.tgz#4de911e667b0eae9124e34254b53aea6fc618d3e"
 
@@ -327,15 +355,19 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-countup.js@^1.7.1:
-  version "1.8.5"
-  resolved "http://registry.npm.taobao.org/countup.js/download/countup.js-1.8.5.tgz#0941f62c605835c601478b45e8c096b16d7e9881"
-
-create-react-class@15.x, create-react-class@^15.5.1, create-react-class@^15.5.2:
+create-react-class@15.x, create-react-class@^15.5.2:
   version "15.5.2"
   resolved "http://registry.npm.taobao.org/create-react-class/download/create-react-class-15.5.2.tgz#6a8758348df660b88326a0e764d569f274aad681"
   dependencies:
     fbjs "^0.8.9"
+    object-assign "^4.1.1"
+
+create-react-class@^15.5.3, create-react-class@^15.6.0:
+  version "15.6.2"
+  resolved "http://registry.npm.taobao.org/create-react-class/download/create-react-class-15.6.2.tgz#cf1ed15f12aad7f14ef5f2dfe05e6c42f91ef02a"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
 css-animation@1.x, css-animation@^1.2.5, css-animation@^1.3.0:
@@ -344,59 +376,12 @@ css-animation@1.x, css-animation@^1.2.5, css-animation@^1.3.0:
   dependencies:
     component-classes "^1.2.5"
 
-d3-array@1:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/d3-array/download/d3-array-1.2.0.tgz#147d269720e174c4057a7f42be8b0f3f2ba53108"
-
-d3-collection@1:
-  version "1.0.3"
-  resolved "http://registry.npm.taobao.org/d3-collection/download/d3-collection-1.0.3.tgz#00bdea94fbc1628d435abbae2f4dc2164e37dd34"
-
-d3-color@1:
-  version "1.0.3"
-  resolved "http://registry.npm.taobao.org/d3-color/download/d3-color-1.0.3.tgz#bc7643fca8e53a8347e2fbdaffa236796b58509b"
-
-d3-format@1:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/d3-format/download/d3-format-1.2.0.tgz#6b480baa886885d4651dc248a8f4ac9da16db07a"
-
-d3-interpolate@1:
-  version "1.1.4"
-  resolved "http://registry.npm.taobao.org/d3-interpolate/download/d3-interpolate-1.1.4.tgz#a43ec5b3bee350d8516efdf819a4c08c053db302"
+css-animation@^1.3.2:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/css-animation/download/css-animation-1.4.1.tgz#5b8813125de0fbbbb0bbe1b472ae84221469b7a8"
   dependencies:
-    d3-color "1"
-
-d3-path@1:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/d3-path/download/d3-path-1.0.5.tgz#241eb1849bd9e9e8021c0d0a799f8a0e8e441764"
-
-d3-scale@^1.0.4:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/d3-scale/download/d3-scale-1.0.5.tgz#418506f0fb18eb052b385e196398acc2a4134858"
-  dependencies:
-    d3-array "1"
-    d3-collection "1"
-    d3-color "1"
-    d3-format "1"
-    d3-interpolate "1"
-    d3-time "1"
-    d3-time-format "2"
-
-d3-shape@^1.0.4:
-  version "1.0.6"
-  resolved "http://registry.npm.taobao.org/d3-shape/download/d3-shape-1.0.6.tgz#b09e305cf0c7c6b9a98c90e6b42f62dac4bcfd5b"
-  dependencies:
-    d3-path "1"
-
-d3-time-format@2:
-  version "2.0.5"
-  resolved "http://registry.npm.taobao.org/d3-time-format/download/d3-time-format-2.0.5.tgz#9d7780204f7c9119c9170b1a56db4de9a8af972e"
-  dependencies:
-    d3-time "1"
-
-d3-time@1:
-  version "1.0.6"
-  resolved "http://registry.npm.taobao.org/d3-time/download/d3-time-1.0.6.tgz#a55b13d7d15d3a160ae91708232e0835f1d5e945"
+    babel-runtime "6.x"
+    component-classes "^1.2.5"
 
 d@1:
   version "1.0.0"
@@ -414,13 +399,17 @@ debug@^2.1.1, debug@^2.1.3, debug@^2.2.0:
   dependencies:
     ms "0.7.3"
 
+decode-uri-component@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/decode-uri-component/download/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+
 deep-eql@~2.0.1:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/deep-eql/download/deep-eql-2.0.2.tgz#b1bac06e56f0a76777686d50c9feb75c2ed7679a"
   dependencies:
     type-detect "^3.0.0"
 
-deep-equal@^1.0.0, deep-equal@^1.0.1:
+deep-equal@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/deep-equal/download/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
 
@@ -495,39 +484,40 @@ draftjs-to-html@^0.7.0:
   version "0.7.2"
   resolved "http://registry.npm.taobao.org/draftjs-to-html/download/draftjs-to-html-0.7.2.tgz#e8735c4d836bd4e6be934ca6ccaedebacff9e772"
 
-draftjs-to-markdown@^0.4.0:
-  version "0.4.1"
-  resolved "http://registry.npm.taobao.org/draftjs-to-markdown/download/draftjs-to-markdown-0.4.1.tgz#c060c6247296731bc740999c87b6ff7d9d29ca55"
-
-draftjs-utils@^0.7.5:
-  version "0.7.5"
-  resolved "http://registry.npm.taobao.org/draftjs-utils/download/draftjs-utils-0.7.5.tgz#982b671bf9b8296c89b05683e63257817d30de55"
+dva-core@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/dva-core/download/dva-core-1.1.0.tgz#a231afdde0f0ee9838bcc4afc0843da0f167b3f5"
   dependencies:
-    immutable "^3.x.x"
-
-dva-loading@^0.2.0:
-  version "0.2.1"
-  resolved "http://registry.npm.taobao.org/dva-loading/download/dva-loading-0.2.1.tgz#fad76b8eeb28c3663a2ee1874cc118702940c63c"
-  dependencies:
-    babel-runtime "^6.11.6"
-
-dva@^1.2.1:
-  version "1.2.1"
-  resolved "http://registry.npm.taobao.org/dva/download/dva-1.2.1.tgz#b9e78a4f1812b2230134d1bb7baadd1af3630138"
-  dependencies:
-    babel-runtime "^6.11.6"
+    babel-runtime "^6.26.0"
     flatten "^1.0.2"
-    global "^4.3.1"
+    global "^4.3.2"
     invariant "^2.2.1"
-    is-plain-object "^2.0.1"
-    isomorphic-fetch "^2.2.1"
-    lodash.isfunction "^3.0.8"
-    react-redux "4.4.x"
-    react-router "^2.8.1"
-    react-router-redux "^4.0.5"
-    redux "^3.6.0"
-    redux-saga "^0.14.0"
+    is-plain-object "^2.0.3"
+    redux "^3.7.1"
+    redux-saga "^0.15.4"
     warning "^3.0.0"
+
+dva-loading@^1.0.4:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/dva-loading/download/dva-loading-1.0.4.tgz#40dddfba2ddb6e047d42a42dc51d50fad642d02b"
+  dependencies:
+    babel-runtime "^6.26.0"
+
+dva@^2.1.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/dva/download/dva-2.1.0.tgz#5a2ffea411f86d3744e2e9aef3fa0a5db6961e3a"
+  dependencies:
+    babel-runtime "^6.26.0"
+    dva-core "^1.1.0"
+    global "^4.3.2"
+    history "^4.6.3"
+    invariant "^2.2.2"
+    isomorphic-fetch "^2.2.1"
+    react-async-component "^1.0.0-beta.3"
+    react-redux "^5.0.5"
+    react-router-dom "^4.1.2"
+    react-router-redux "5.0.0-alpha.6"
+    redux "^3.7.2"
 
 encoding@^0.1.11:
   version "0.1.12"
@@ -535,7 +525,7 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-enquire.js@^2.1.6:
+enquire.js@^2.1.1, enquire.js@^2.1.6:
   version "2.1.6"
   resolved "http://registry.npm.taobao.org/enquire.js/download/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
 
@@ -664,7 +654,7 @@ eslint-plugin-react@^5.1.1:
     doctrine "^1.2.2"
     jsx-ast-utils "^1.2.1"
 
-eslint@^3.17.1:
+eslint@^3.19.0:
   version "3.19.0"
   resolved "http://registry.npm.taobao.org/eslint/download/eslint-3.19.0.tgz#c8fc6201c7f40dd08941b87c085767386a679acc"
   dependencies:
@@ -763,7 +753,19 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "http://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-fbjs@^0.8.4, fbjs@^0.8.7, fbjs@^0.8.9:
+fbjs@^0.8.16:
+  version "0.8.16"
+  resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.9"
+
+fbjs@^0.8.7, fbjs@^0.8.9:
   version "0.8.12"
   resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
   dependencies:
@@ -844,7 +846,7 @@ glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global@^4.3.1:
+global@^4.3.2:
   version "4.3.2"
   resolved "http://registry.npm.taobao.org/global/download/global-4.3.2.tgz#e76989268a6c74c38908b1305b10fc0e394e9d0f"
   dependencies:
@@ -890,18 +892,19 @@ has@^1.0.1:
   dependencies:
     function-bind "^1.0.2"
 
-history@^2.1.2:
-  version "2.1.2"
-  resolved "http://registry.npm.taobao.org/history/download/history-2.1.2.tgz#4aa2de897a0e4867e4539843be6ecdb2986bfdec"
+history@^4.5.1, history@^4.6.3, history@^4.7.2:
+  version "4.7.2"
+  resolved "http://registry.npm.taobao.org/history/download/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
   dependencies:
-    deep-equal "^1.0.0"
-    invariant "^2.0.0"
-    query-string "^3.0.0"
-    warning "^2.0.0"
+    invariant "^2.2.1"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    value-equal "^0.4.0"
+    warning "^3.0.0"
 
-hoist-non-react-statics@1.x, hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+hoist-non-react-statics@^2.2.1, hoist-non-react-statics@^2.3.0, hoist-non-react-statics@^2.3.1:
+  version "2.3.1"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
 
 iconv-lite@~0.4.13:
   version "0.4.17"
@@ -911,13 +914,9 @@ ignore@^3.2.0:
   version "3.3.0"
   resolved "http://registry.npm.taobao.org/ignore/download/ignore-3.3.0.tgz#3812d22cbe9125f2c2b4915755a1b8abd745a001"
 
-immutable@^3.7.4, immutable@^3.8.1, immutable@^3.x.x:
+immutable@^3.7.4:
   version "3.8.1"
   resolved "http://registry.npm.taobao.org/immutable/download/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
-
-immutable@^4.0.0-rc.1:
-  version "4.0.0-rc.2"
-  resolved "http://registry.npm.taobao.org/immutable/download/immutable-4.0.0-rc.2.tgz#fdd0948aae728fda2306a02f72bb73e1773432d1"
 
 immutable@~3.7.4:
   version "3.7.6"
@@ -960,7 +959,7 @@ interpret@^1.0.0:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/interpret/download/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
 
-invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.1:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.2"
   resolved "http://registry.npm.taobao.org/invariant/download/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -1001,11 +1000,11 @@ is-path-inside@^1.0.0:
   dependencies:
     path-is-inside "^1.0.1"
 
-is-plain-object@^2.0.1:
-  version "2.0.1"
-  resolved "http://registry.npm.taobao.org/is-plain-object/download/is-plain-object-2.0.1.tgz#4d7ca539bc9db9b737b8acb612f2318ef92f294f"
+is-plain-object@^2.0.3:
+  version "2.0.4"
+  resolved "http://registry.npm.taobao.org/is-plain-object/download/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
   dependencies:
-    isobject "^1.0.0"
+    isobject "^3.0.1"
 
 is-property@^1.0.0:
   version "1.0.2"
@@ -1021,13 +1020,17 @@ is-stream@^1.0.1:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/is-stream/download/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+
 isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/isarray/download/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
-isobject@^1.0.0:
-  version "1.0.2"
-  resolved "http://registry.npm.taobao.org/isobject/download/isobject-1.0.2.tgz#f0f9b8ce92dd540fa0740882e3835a2e022ec78a"
+isobject@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/isobject/download/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
 isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
@@ -1092,7 +1095,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lodash-es@^4.2.1:
+lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
   resolved "http://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
 
@@ -1128,10 +1131,6 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "http://registry.npm.taobao.org/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
 
-lodash.has@^4.5.2:
-  version "4.5.2"
-  resolved "http://registry.npm.taobao.org/lodash.has/download/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
-
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "http://registry.npm.taobao.org/lodash.isarguments/download/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -1139,10 +1138,6 @@ lodash.isarguments@^3.0.0:
 lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "http://registry.npm.taobao.org/lodash.isarray/download/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
-
-lodash.isfunction@^3.0.8:
-  version "3.0.8"
-  resolved "http://registry.npm.taobao.org/lodash.isfunction/download/lodash.isfunction-3.0.8.tgz#4db709fc81bc4a8fd7127a458a5346c5cdce2c6b"
 
 lodash.keys@^3.1.2:
   version "3.1.2"
@@ -1152,37 +1147,41 @@ lodash.keys@^3.1.2:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash.merge@^4.6.0:
+  version "4.6.0"
+  resolved "http://registry.npm.taobao.org/lodash.merge/download/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+
 lodash.pickby@^4.0.0:
   version "4.6.0"
   resolved "http://registry.npm.taobao.org/lodash.pickby/download/lodash.pickby-4.6.0.tgz#7dea21d8c18d7703a27c704c15d3b84a67e33aff"
-
-lodash.set@^4.3.2:
-  version "4.3.2"
-  resolved "http://registry.npm.taobao.org/lodash.set/download/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
 
 lodash.throttle@^4.0.0:
   version "4.1.1"
   resolved "http://registry.npm.taobao.org/lodash.throttle/download/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
-lodash@^4.0.0, lodash@^4.16.4, lodash@^4.16.5, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
+lodash@^4.0.0, lodash@^4.16.5, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.4"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1:
   version "1.3.1"
   resolved "http://registry.npm.taobao.org/loose-envify/download/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
     js-tokens "^3.0.0"
-
-math-expression-evaluator@^1.2.14:
-  version "1.2.17"
-  resolved "http://registry.npm.taobao.org/math-expression-evaluator/download/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
 
 min-document@^2.19.0:
   version "2.19.0"
   resolved "http://registry.npm.taobao.org/min-document/download/min-document-2.19.0.tgz#7bd282e3f5842ed295bb748cdd9f1ffa2c824685"
   dependencies:
     dom-walk "^0.1.0"
+
+mini-store@^1.0.2:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/mini-store/download/mini-store-1.0.4.tgz#a540fbfdbddd0415daf17a8b0cc8290c9f7d8bd6"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    prop-types "^15.6.0"
+    shallowequal "^1.0.2"
 
 minimatch@^3.0.2, minimatch@^3.0.3:
   version "3.0.3"
@@ -1206,9 +1205,13 @@ mockjs@^1.0.1-beta3:
   dependencies:
     commander "*"
 
-moment@2.x, moment@^2.18.1:
+moment@2.x:
   version "2.18.1"
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
+
+moment@^2.19.3:
+  version "2.20.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 ms@0.7.3:
   version "0.7.3"
@@ -1237,11 +1240,11 @@ object-assign@4.x, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.
   version "4.1.1"
   resolved "http://registry.npm.taobao.org/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
-omit.js@^0.1.0:
-  version "0.1.0"
-  resolved "http://registry.npm.taobao.org/omit.js/download/omit.js-0.1.0.tgz#9786a21a6d6c316fa35bb14e7101eeee21c52044"
+omit.js@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/omit.js/download/omit.js-1.0.0.tgz#e013cb86a7517b9cf6f7cfb0ddb4297256a99288"
   dependencies:
-    object-assign "^4.1.0"
+    babel-runtime "^6.23.0"
 
 once@^1.3.0:
   version "1.4.0"
@@ -1285,6 +1288,12 @@ path-is-inside@^1.0.1:
 path-parse@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/path-parse/download/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
+
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  dependencies:
+    isarray "0.0.1"
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -1342,23 +1351,33 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.x, prop-types@^15.5.0, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@~15.5.7:
+prop-types@15.x, prop-types@^15.5.0, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8:
   version "15.5.8"
   resolved "http://registry.npm.taobao.org/prop-types/download/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
     fbjs "^0.8.9"
 
-qs@^6.2.0:
-  version "6.4.0"
-  resolved "http://registry.npm.taobao.org/qs/download/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
-
-query-string@^3.0.0:
-  version "3.0.3"
-  resolved "http://registry.npm.taobao.org/query-string/download/query-string-3.0.3.tgz#ae2e14b4d05071d4e9b9eb4873c35b0dcd42e638"
+prop-types@^15.5.10, prop-types@^15.5.9, prop-types@^15.6.0:
+  version "15.6.0"
+  resolved "http://registry.npm.taobao.org/prop-types/download/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
+qs@^6.5.0:
+  version "6.5.1"
+  resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
+
+query-string@^5.0.1:
+  version "5.0.1"
+  resolved "http://registry.npm.taobao.org/query-string/download/query-string-5.0.1.tgz#6e2b86fe0e08aef682ecbe86e85834765402bd88"
+  dependencies:
+    decode-uri-component "^0.2.0"
+    object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
-raf@^3.2.0, raf@~3.3.0:
+raf@~3.3.0:
   version "3.3.2"
   resolved "http://registry.npm.taobao.org/raf/download/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
   dependencies:
@@ -1372,114 +1391,134 @@ rc-align@2.x:
     prop-types "^15.5.8"
     rc-util "4.x"
 
-rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@~2.3.0:
+rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0:
   version "2.3.6"
   resolved "http://registry.npm.taobao.org/rc-animate/download/rc-animate-2.3.6.tgz#4177a2822c67adf4fd5b908ceba7cee8d13c1fac"
   dependencies:
     css-animation "^1.3.0"
     prop-types "^15.5.6"
 
-rc-calendar@~8.1.0:
-  version "8.1.3"
-  resolved "http://registry.npm.taobao.org/rc-calendar/download/rc-calendar-8.1.3.tgz#45aadd0942d319378d1d08af3273b399eef7209b"
+rc-animate@^2.4.1:
+  version "2.4.4"
+  resolved "http://registry.npm.taobao.org/rc-animate/download/rc-animate-2.4.4.tgz#a05a784c747beef140d99ff52b6117711bef4b1e"
+  dependencies:
+    babel-runtime "6.x"
+    css-animation "^1.3.2"
+    prop-types "15.x"
+
+rc-calendar@~9.4.0:
+  version "9.4.0"
+  resolved "http://registry.npm.taobao.org/rc-calendar/download/rc-calendar-9.4.0.tgz#1fa9dacaabd69120524147916c0357f1bae127d1"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
     create-react-class "^15.5.2"
     moment "2.x"
     prop-types "^15.5.8"
-    rc-trigger "1.x"
-    rc-util "3.x"
+    rc-trigger "^2.2.0"
+    rc-util "^4.1.1"
 
-rc-cascader@~0.11.0:
-  version "0.11.3"
-  resolved "http://registry.npm.taobao.org/rc-cascader/download/rc-cascader-0.11.3.tgz#9caec58048e5fb135ec23e90309e910af046956c"
+rc-cascader@~0.12.0:
+  version "0.12.2"
+  resolved "http://registry.npm.taobao.org/rc-cascader/download/rc-cascader-0.12.2.tgz#2d08fe44b504364137d3c748f51ac393483e7b3b"
   dependencies:
     array-tree-filter "^1.0.0"
     prop-types "^15.5.8"
-    rc-trigger "1.x"
-    rc-util "4.x"
+    rc-trigger "^2.2.0"
+    rc-util "^4.0.4"
     shallow-equal "^1.0.0"
 
-rc-checkbox@1.x, rc-checkbox@~1.5.0:
-  version "1.5.0"
-  resolved "http://registry.npm.taobao.org/rc-checkbox/download/rc-checkbox-1.5.0.tgz#464ce9b40b1ad9d119524ced174a60a7b4eb7529"
+rc-checkbox@~2.1.1:
+  version "2.1.4"
+  resolved "http://registry.npm.taobao.org/rc-checkbox/download/rc-checkbox-2.1.4.tgz#7f5ebabe7035ef333597d026faa0edd0f4d919b4"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "2.x"
-    rc-util "^4.0.1"
+    prop-types "15.x"
+    rc-util "^4.0.4"
 
-rc-collapse@~1.7.0:
-  version "1.7.3"
-  resolved "http://registry.npm.taobao.org/rc-collapse/download/rc-collapse-1.7.3.tgz#3ef64cb7b845b91d50cc73df1adc2c95e79ac1c5"
+rc-collapse@~1.7.5:
+  version "1.7.7"
+  resolved "http://registry.npm.taobao.org/rc-collapse/download/rc-collapse-1.7.7.tgz#16c9fe691f0191f16c9c2eda39989bfc1a19fa2b"
   dependencies:
     classnames "2.x"
     css-animation "1.x"
     prop-types "^15.5.6"
     rc-animate "2.x"
 
-rc-dialog@~6.5.0:
-  version "6.5.8"
-  resolved "http://registry.npm.taobao.org/rc-dialog/download/rc-dialog-6.5.8.tgz#9aec022122c0220a53591f2dd2e2774584df8397"
+rc-dialog@~7.1.0:
+  version "7.1.0"
+  resolved "http://registry.npm.taobao.org/rc-dialog/download/rc-dialog-7.1.0.tgz#ffc18c8f799f1cbc343e9f3a1bd9190a1cb62079"
   dependencies:
     babel-runtime "6.x"
+    create-react-class "^15.5.2"
     object-assign "~4.1.0"
     rc-animate "2.x"
-    rc-util "^4.0.2"
+    rc-util "^4.1.0"
 
-rc-dropdown@~1.4.8:
-  version "1.4.11"
-  resolved "http://registry.npm.taobao.org/rc-dropdown/download/rc-dropdown-1.4.11.tgz#91bdf7bb77064c928c117909d757f22582512de7"
+rc-dropdown@~2.1.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/rc-dropdown/download/rc-dropdown-2.1.0.tgz#ae39db67e593ef4ed889dee99ef13ae3994a5c7f"
   dependencies:
+    babel-runtime "^6.26.0"
     prop-types "^15.5.8"
-    rc-trigger "1.x"
+    rc-trigger "^2.2.2"
 
-rc-editor-core@^0.7.0:
-  version "0.7.4"
-  resolved "http://registry.npm.taobao.org/rc-editor-core/download/rc-editor-core-0.7.4.tgz#7613266b7cf41acdfadcdf55ee05f31ef0b27a5a"
+rc-editor-core@~0.8.3:
+  version "0.8.3"
+  resolved "http://registry.npm.taobao.org/rc-editor-core/download/rc-editor-core-0.8.3.tgz#0be6a37a10152ae6d58bd2ecfefdf2c80ce0689a"
   dependencies:
+    babel-runtime "^6.26.0"
     draft-js "^0.10.0"
     immutable "^3.7.4"
     lodash "^4.16.5"
     prop-types "^15.5.8"
     setimmediate "^1.0.5"
 
-rc-editor-mention@~0.6.11:
-  version "0.6.11"
-  resolved "http://registry.npm.taobao.org/rc-editor-mention/download/rc-editor-mention-0.6.11.tgz#2cd843c46bfa014c58333491683950a7364e9b9b"
+rc-editor-mention@^1.0.2:
+  version "1.1.4"
+  resolved "http://registry.npm.taobao.org/rc-editor-mention/download/rc-editor-mention-1.1.4.tgz#b151d76faa3313300b967507da217f0fea1c9912"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "^2.2.5"
     dom-scroll-into-view "^1.2.0"
     draft-js "~0.10.0"
-    immutable "^3.8.1"
+    prop-types "^15.5.8"
     rc-animate "^2.3.0"
-    rc-editor-core "^0.7.0"
+    rc-editor-core "~0.8.3"
 
-rc-form@~1.3.0:
-  version "1.3.1"
-  resolved "http://registry.npm.taobao.org/rc-form/download/rc-form-1.3.1.tgz#23ce35e37d1bbe8370e6e88b604b167650f99afa"
+rc-form@^2.1.0:
+  version "2.1.7"
+  resolved "http://registry.npm.taobao.org/rc-form/download/rc-form-2.1.7.tgz#3e01c5e19838038b65a58014e2802deb088b60b7"
   dependencies:
     async-validator "1.x"
     babel-runtime "6.x"
+    create-react-class "^15.5.3"
     dom-scroll-into-view "1.x"
-    hoist-non-react-statics "1.x"
-    lodash.get "^4.4.2"
-    lodash.has "^4.5.2"
-    lodash.set "^4.3.2"
+    hoist-non-react-statics "^2.3.1"
+    lodash "^4.17.4"
     warning "^3.0.0"
 
-rc-input-number@~3.4.4:
-  version "3.4.14"
-  resolved "http://registry.npm.taobao.org/rc-input-number/download/rc-input-number-3.4.14.tgz#efea6944edb293906e2f57d8c01f06a79938bda0"
+rc-hammerjs@~0.6.0:
+  version "0.6.9"
+  resolved "http://registry.npm.taobao.org/rc-hammerjs/download/rc-hammerjs-0.6.9.tgz#9a4ddbda1b2ec8f9b9596091a6a989842a243907"
+  dependencies:
+    babel-runtime "6.x"
+    hammerjs "^2.0.8"
+    prop-types "^15.5.9"
+
+rc-input-number@~4.0.0:
+  version "4.0.2"
+  resolved "http://registry.npm.taobao.org/rc-input-number/download/rc-input-number-4.0.2.tgz#09651d5fc05c7f6a1e2111dbfad7ed5743fa7595"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.0"
-    create-react-class "^15.5.2"
     prop-types "^15.5.7"
-    rc-touchable "^1.0.0"
+    rmc-feedback "^1.0.0"
 
-"rc-menu@5.x || 4.x", rc-menu@~5.0.9:
-  version "5.0.10"
-  resolved "http://registry.npm.taobao.org/rc-menu/download/rc-menu-5.0.10.tgz#266cf12e5844ba2606730b9198422da04d102b7e"
+rc-menu@^6.1.0, rc-menu@~6.2.0:
+  version "6.2.6"
+  resolved "http://registry.npm.taobao.org/rc-menu/download/rc-menu-6.2.6.tgz#ad95a4926792d0476b3b25f6d015a497915dbbbd"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
@@ -1487,161 +1526,165 @@ rc-input-number@~3.4.4:
     dom-scroll-into-view "1.x"
     prop-types "^15.5.6"
     rc-animate "2.x"
-    rc-util "^4.0.2"
+    rc-trigger "^2.3.0"
+    rc-util "^4.1.0"
 
-rc-notification@~1.4.0:
-  version "1.4.2"
-  resolved "http://registry.npm.taobao.org/rc-notification/download/rc-notification-1.4.2.tgz#98c592026bacdba791b096614553d5d88d7bc133"
-  dependencies:
-    classnames "2.x"
-    prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-util "4.x"
-
-rc-pagination@~1.8.7:
-  version "1.8.7"
-  resolved "http://registry.npm.taobao.org/rc-pagination/download/rc-pagination-1.8.7.tgz#029ad1b8d8650e8cf286b11076dc9ce12a194cfb"
-  dependencies:
-    prop-types "^15.5.7"
-
-rc-progress@~2.1.0:
-  version "2.1.1"
-  resolved "http://registry.npm.taobao.org/rc-progress/download/rc-progress-2.1.1.tgz#808cb3cd42e75cf986569d9c03ecff7158b73df4"
-  dependencies:
-    prop-types "^15.5.8"
-
-rc-radio@~2.0.0:
-  version "2.0.1"
-  resolved "http://registry.npm.taobao.org/rc-radio/download/rc-radio-2.0.1.tgz#c8dc93e9df7891de294d1b26d352e978e1a86d5f"
-  dependencies:
-    rc-checkbox "1.x"
-
-rc-rate@~2.1.0:
-  version "2.1.1"
-  resolved "http://registry.npm.taobao.org/rc-rate/download/rc-rate-2.1.1.tgz#88aeda8b3d6470bbae4f6518c652a02a959bddc5"
-  dependencies:
-    classnames "^2.2.5"
-    prop-types "^15.5.8"
-
-rc-select@~6.8.0:
-  version "6.8.4"
-  resolved "http://registry.npm.taobao.org/rc-select/download/rc-select-6.8.4.tgz#10b5b09fd865c714a69190354e6a2ef3dd04fcb8"
+rc-notification@~3.0.0:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/rc-notification/download/rc-notification-3.0.1.tgz#9ddcb831895ad40943a7e1df34951aa705173bce"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
+    prop-types "^15.5.8"
+    rc-animate "2.x"
+    rc-util "^4.0.4"
+
+rc-pagination@~1.14.0:
+  version "1.14.0"
+  resolved "http://registry.npm.taobao.org/rc-pagination/download/rc-pagination-1.14.0.tgz#c0f34901941b35d65365baf73a5237084042b97e"
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.5.7"
+
+rc-progress@~2.2.2:
+  version "2.2.5"
+  resolved "http://registry.npm.taobao.org/rc-progress/download/rc-progress-2.2.5.tgz#e61d0544bf9d4208e5ba32fc50962159e7f952a3"
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.5.8"
+
+rc-rate@~2.4.0:
+  version "2.4.0"
+  resolved "http://registry.npm.taobao.org/rc-rate/download/rc-rate-2.4.0.tgz#97ebcc5876e2e498b9f5f65ced256d8ab54e5f06"
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    rc-util "^4.3.0"
+
+rc-select@~7.5.0:
+  version "7.5.1"
+  resolved "http://registry.npm.taobao.org/rc-select/download/rc-select-7.5.1.tgz#738aaa3a3a0256914e76c6be81ba3464e28fa12f"
+  dependencies:
+    babel-runtime "^6.23.0"
+    classnames "2.x"
     component-classes "1.x"
-    create-react-class "^15.5.2"
     dom-scroll-into-view "1.x"
     prop-types "^15.5.8"
     rc-animate "2.x"
-    rc-menu "5.x || 4.x"
-    rc-trigger "1.x"
-    rc-util "4.x"
-    warning "2.x"
+    rc-menu "^6.1.0"
+    rc-trigger "^2.2.0"
+    rc-util "^4.0.4"
+    warning "^3.0.0"
 
-rc-slider@~7.0.0:
-  version "7.0.3"
-  resolved "http://registry.npm.taobao.org/rc-slider/download/rc-slider-7.0.3.tgz#22eb144e54bd5643308bfec2cb396444c747db79"
+rc-slider@~8.5.0:
+  version "8.5.0"
+  resolved "http://registry.npm.taobao.org/rc-slider/download/rc-slider-8.5.0.tgz#6fae97d8ba59a012af69a00409f21925b8954cf5"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
     prop-types "^15.5.4"
-    rc-tooltip "^3.4.2"
-    rc-util "^4.0.0"
+    rc-tooltip "^3.7.0"
+    rc-util "^4.0.4"
+    shallowequal "^1.0.1"
     warning "^3.0.0"
 
-rc-steps@~2.5.0:
-  version "2.5.1"
-  resolved "http://registry.npm.taobao.org/rc-steps/download/rc-steps-2.5.1.tgz#c3969aea3fb984cecb977a4a96ab634d756a6dc4"
+rc-steps@~3.0.0:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/rc-steps/download/rc-steps-3.0.1.tgz#fa886eb93d223173ef9a05396f32186992549535"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "^2.2.3"
     lodash.debounce "^4.0.8"
     prop-types "^15.5.7"
 
-rc-switch@~1.4.2:
-  version "1.4.4"
-  resolved "http://registry.npm.taobao.org/rc-switch/download/rc-switch-1.4.4.tgz#fdf084ac91f0267f828bdb94bb208ca1fe89815b"
+rc-switch@~1.6.0:
+  version "1.6.0"
+  resolved "http://registry.npm.taobao.org/rc-switch/download/rc-switch-1.6.0.tgz#c2d7369bdb87c1fd45e84989a27c1fb2f201d2fd"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "^2.2.1"
     prop-types "^15.5.6"
 
-rc-table@~5.2.13:
-  version "5.2.15"
-  resolved "http://registry.npm.taobao.org/rc-table/download/rc-table-5.2.15.tgz#a6521ba68d660b023e9854f81fffdd7a80065e22"
+rc-table@~6.1.0:
+  version "6.1.4"
+  resolved "http://registry.npm.taobao.org/rc-table/download/rc-table-6.1.4.tgz#3ab1835c9418d0aa097e36b18501ebf724b9a0cc"
   dependencies:
+    babel-runtime "6.x"
     component-classes "^1.2.6"
     lodash.get "^4.4.2"
-    rc-util "4.x"
-    shallowequal "^0.2.2"
+    lodash.merge "^4.6.0"
+    mini-store "^1.0.2"
+    prop-types "^15.5.8"
+    rc-util "^4.0.4"
+    shallowequal "^1.0.2"
     warning "^3.0.0"
 
-rc-tabs@~7.3.0:
-  version "7.3.4"
-  resolved "http://registry.npm.taobao.org/rc-tabs/download/rc-tabs-7.3.4.tgz#c0b8753fc0cc5e6c3354a815afe96b8f00361a3a"
+rc-tabs@~9.1.2:
+  version "9.1.11"
+  resolved "http://registry.npm.taobao.org/rc-tabs/download/rc-tabs-9.1.11.tgz#cb259d312b4b238f4e5a90dc0efb88000d8e9535"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
     create-react-class "15.x"
+    lodash.debounce "^4.0.8"
     prop-types "15.x"
-    react-hammerjs "~0.5.0"
+    rc-hammerjs "~0.6.0"
+    rc-util "^4.0.4"
     warning "^3.0.0"
 
-rc-time-picker@~2.4.0:
-  version "2.4.0"
-  resolved "http://registry.npm.taobao.org/rc-time-picker/download/rc-time-picker-2.4.0.tgz#613e0b4bd341fc0aa076bf953a90d52269b2b0e9"
+rc-time-picker@~3.2.1:
+  version "3.2.1"
+  resolved "http://registry.npm.taobao.org/rc-time-picker/download/rc-time-picker-3.2.1.tgz#e105fed32814bb95f37dbc60b49495cd787abfa2"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
     moment "2.x"
     prop-types "^15.5.8"
-    rc-trigger "1.x"
+    rc-trigger "^2.2.0"
 
-rc-tooltip@^3.4.2, rc-tooltip@~3.4.2:
-  version "3.4.3"
-  resolved "http://registry.npm.taobao.org/rc-tooltip/download/rc-tooltip-3.4.3.tgz#6ae6ef0eccea39ca2add125bccdb34802c612eec"
-  dependencies:
-    prop-types "^15.5.8"
-    rc-trigger "1.x"
-
-rc-touchable@^1.0.0:
-  version "1.1.4"
-  resolved "http://registry.npm.taobao.org/rc-touchable/download/rc-touchable-1.1.4.tgz#8ce0c7abb7e4c6560e3be5b5f84df51b9b3addcd"
+rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
+  version "3.7.0"
+  resolved "http://registry.npm.taobao.org/rc-tooltip/download/rc-tooltip-3.7.0.tgz#3afbf109865f7cdcfe43752f3f3f501f7be37aaa"
   dependencies:
     babel-runtime "6.x"
-    object-assign "^4.1.0"
+    prop-types "^15.5.8"
+    rc-trigger "^2.2.2"
 
-rc-tree-select@~1.9.0:
-  version "1.9.4"
-  resolved "http://registry.npm.taobao.org/rc-tree-select/download/rc-tree-select-1.9.4.tgz#9bb4778689dce1257a6aa67cc176760e90611c79"
+rc-tree-select@~1.12.0:
+  version "1.12.9"
+  resolved "http://registry.npm.taobao.org/rc-tree-select/download/rc-tree-select-1.12.9.tgz#340ce3b1ce7afab2e717ee90febff114720e5fef"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "^2.2.1"
     object-assign "^4.0.1"
     prop-types "^15.5.8"
     rc-animate "^2.0.2"
-    rc-tree "^1.3.0"
-    rc-trigger "1.x"
+    rc-tree "~1.7.1"
+    rc-trigger "^2.2.2"
     rc-util "^4.0.2"
 
-rc-tree@^1.3.0, rc-tree@~1.5.0:
-  version "1.5.0"
-  resolved "http://registry.npm.taobao.org/rc-tree/download/rc-tree-1.5.0.tgz#6b700303c4f160ad7f6c438a8fdca57de96a5dd1"
+rc-tree@~1.7.0, rc-tree@~1.7.1:
+  version "1.7.10"
+  resolved "http://registry.npm.taobao.org/rc-tree/download/rc-tree-1.7.10.tgz#8d93d73fa3a91ebf6dde4ebaa98e750a9c8fe154"
   dependencies:
+    babel-runtime "^6.23.0"
     classnames "2.x"
-    object-assign "4.x"
     prop-types "^15.5.8"
     rc-animate "2.x"
-    rc-util "^4.0.2"
+    rc-util "^4.0.4"
+    warning "^3.0.0"
 
-rc-trigger@1.x:
-  version "1.10.3"
-  resolved "http://registry.npm.taobao.org/rc-trigger/download/rc-trigger-1.10.3.tgz#6bf367ac69705662224003d8b0277b9dfbf5cef4"
+rc-trigger@^2.2.0, rc-trigger@^2.2.2, rc-trigger@^2.3.0:
+  version "2.3.3"
+  resolved "http://registry.npm.taobao.org/rc-trigger/download/rc-trigger-2.3.3.tgz#406c5ddea594aca71d067852f27d91a5f3a653b8"
   dependencies:
     babel-runtime "6.x"
-    create-react-class "^15.5.2"
-    prop-types "^15.5.8"
+    create-react-class "15.x"
+    prop-types "15.x"
     rc-align "2.x"
     rc-animate "2.x"
-    rc-util "4.x"
+    rc-util "^4.3.0"
 
 rc-tween-one@^1.0.0:
   version "1.2.5"
@@ -1654,122 +1697,102 @@ rc-tween-one@^1.0.0:
     style-utils "~0.1.13"
     tween-functions "~1.2.0"
 
-rc-upload@~2.3.0:
-  version "2.3.5"
-  resolved "http://registry.npm.taobao.org/rc-upload/download/rc-upload-2.3.5.tgz#a9eea234393020dc1ae3eea9988841112538b9d0"
+rc-upload@~2.4.0:
+  version "2.4.4"
+  resolved "http://registry.npm.taobao.org/rc-upload/download/rc-upload-2.4.4.tgz#28e1e6a3e44d1b1f92e57e21927cfa2763ac2a21"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
     prop-types "^15.5.7"
     warning "2.x"
 
-rc-util@3.x:
-  version "3.4.1"
-  resolved "http://registry.npm.taobao.org/rc-util/download/rc-util-3.4.1.tgz#4b7e0b0c7593bdbcff8ed045d88fbbc773a7b061"
-  dependencies:
-    add-dom-event-listener "1.x"
-    classnames "2.x"
-    shallowequal "0.2.x"
-
-rc-util@4.x, rc-util@^4.0.0, rc-util@^4.0.1, rc-util@^4.0.2:
+rc-util@4.x, rc-util@^4.0.2:
   version "4.0.2"
   resolved "http://registry.npm.taobao.org/rc-util/download/rc-util-4.0.2.tgz#5804f8b141a13c8c14d7c265a7d21d298195af46"
   dependencies:
     add-dom-event-listener "1.x"
     shallowequal "^0.2.2"
 
-react-addons-shallow-compare@^15.3.2:
-  version "15.5.2"
-  resolved "http://registry.npm.taobao.org/react-addons-shallow-compare/download/react-addons-shallow-compare-15.5.2.tgz#7cb0ee7acc8d7c93fcc202df0bf47ba916a7bdad"
+rc-util@^4.0.4, rc-util@^4.1.0, rc-util@^4.1.1, rc-util@^4.3.0:
+  version "4.3.1"
+  resolved "http://registry.npm.taobao.org/rc-util/download/rc-util-4.3.1.tgz#79f0adb30f449c1b29d7c5cdb2d82c193920c362"
   dependencies:
-    fbjs "^0.8.4"
-    object-assign "^4.1.0"
+    add-dom-event-listener "1.x"
+    babel-runtime "6.x"
+    prop-types "^15.5.10"
+    shallowequal "^0.2.2"
 
-"react-addons-transition-group@^0.14.0 || ^15.0.0":
-  version "15.5.2"
-  resolved "http://registry.npm.taobao.org/react-addons-transition-group/download/react-addons-transition-group-15.5.2.tgz#da6989d9cffe27dffacaedc862000ffb09ae2206"
-  dependencies:
-    fbjs "^0.8.4"
-    object-assign "^4.1.0"
+react-async-component@^1.0.0-beta.3:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/react-async-component/download/react-async-component-1.0.2.tgz#b041722bf7734a95c51dc9fc2f28ec9e918e9659"
 
-react-countup@1.3.0:
-  version "1.3.0"
-  resolved "http://registry.npm.taobao.org/react-countup/download/react-countup-1.3.0.tgz#6c245b3f6b77a8d54c5492e5c15e32adee976ed3"
+react-dom@^16.2.0:
+  version "16.2.0"
+  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
-    countup.js "^1.7.1"
-    react "^15.3.2"
-    react-addons-shallow-compare "^15.3.2"
-    react-dom "^15.3.2"
-
-react-dom@^15.3.2, react-dom@^15.4.1:
-  version "15.5.4"
-  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
-  dependencies:
-    fbjs "^0.8.9"
+    fbjs "^0.8.16"
     loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "~15.5.7"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
-react-draft-wysiwyg@^1.8.1:
-  version "1.9.8"
-  resolved "http://registry.npm.taobao.org/react-draft-wysiwyg/download/react-draft-wysiwyg-1.9.8.tgz#d4cad68d39dcd4256fd4755e808e978d26aaa594"
-  dependencies:
-    classnames "^2.2.5"
-    draftjs-utils "^0.7.5"
-    immutable "^4.0.0-rc.1"
-    prop-types "^15.5.8"
-
-react-hammerjs@~0.5.0:
-  version "0.5.0"
-  resolved "http://registry.npm.taobao.org/react-hammerjs/download/react-hammerjs-0.5.0.tgz#aa20e5c5f44d660f3e8e87ed11282f12173e77ae"
-  dependencies:
-    hammerjs "^2.0.8"
-
-react-helmet@^5.0.0:
-  version "5.0.3"
-  resolved "http://registry.npm.taobao.org/react-helmet/download/react-helmet-5.0.3.tgz#c6da63ee96e83aa7c8fe6d041f28dd288b1b006d"
+react-helmet@^5.1.3:
+  version "5.2.0"
+  resolved "http://registry.npm.taobao.org/react-helmet/download/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"
   dependencies:
     deep-equal "^1.0.1"
     object-assign "^4.1.1"
     prop-types "^15.5.4"
     react-side-effect "^1.1.0"
 
-react-lazy-load@^3.0.10:
-  version "3.0.12"
-  resolved "http://registry.npm.taobao.org/react-lazy-load/download/react-lazy-load-3.0.12.tgz#2b841dfc3227e8119d033189d2c960ce384d0cb9"
+react-lazy-load@^3.0.12:
+  version "3.0.13"
+  resolved "http://registry.npm.taobao.org/react-lazy-load/download/react-lazy-load-3.0.13.tgz#3b0a92d336d43d3f0d73cbe6f35b17050b08b824"
   dependencies:
     eventlistener "0.0.1"
     lodash.debounce "^4.0.0"
     lodash.throttle "^4.0.0"
     prop-types "^15.5.8"
 
-react-redux@4.4.x:
-  version "4.4.8"
-  resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-4.4.8.tgz#e7bc1dd100e8b64e96ac8212db113239b9e2e08f"
+react-redux@^5.0.5:
+  version "5.0.6"
+  resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"
   dependencies:
-    create-react-class "^15.5.1"
-    hoist-non-react-statics "^1.0.3"
+    hoist-non-react-statics "^2.2.1"
     invariant "^2.0.0"
     lodash "^4.2.0"
+    lodash-es "^4.2.0"
     loose-envify "^1.1.0"
-    prop-types "^15.5.4"
+    prop-types "^15.5.10"
 
-react-resize-detector@^0.3.3:
-  version "0.3.3"
-  resolved "http://registry.npm.taobao.org/react-resize-detector/download/react-resize-detector-0.3.3.tgz#ca07443072324843586666d9443a6356da7c0501"
-
-react-router-redux@^4.0.5:
-  version "4.0.8"
-  resolved "http://registry.npm.taobao.org/react-router-redux/download/react-router-redux-4.0.8.tgz#227403596b5151e182377dab835b5d45f0f8054e"
-
-react-router@^2.8.1:
-  version "2.8.1"
-  resolved "http://registry.npm.taobao.org/react-router/download/react-router-2.8.1.tgz#73e9491f6ceb316d0f779829081863e378ee4ed7"
+react-router-dom@^4.1.2:
+  version "4.2.2"
+  resolved "http://registry.npm.taobao.org/react-router-dom/download/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"
   dependencies:
-    history "^2.1.2"
-    hoist-non-react-statics "^1.2.0"
-    invariant "^2.2.1"
-    loose-envify "^1.2.0"
+    history "^4.7.2"
+    invariant "^2.2.2"
+    loose-envify "^1.3.1"
+    prop-types "^15.5.4"
+    react-router "^4.2.0"
+    warning "^3.0.0"
+
+react-router-redux@5.0.0-alpha.6:
+  version "5.0.0-alpha.6"
+  resolved "http://registry.npm.taobao.org/react-router-redux/download/react-router-redux-5.0.0-alpha.6.tgz#7418663c2ecd3c51be856fcf28f3d1deecc1a576"
+  dependencies:
+    history "^4.5.1"
+    prop-types "^15.5.4"
+    react-router "^4.1.1"
+
+react-router@^4.1.1, react-router@^4.2.0:
+  version "4.2.0"
+  resolved "http://registry.npm.taobao.org/react-router/download/react-router-4.2.0.tgz#61f7b3e3770daeb24062dae3eedef1b054155986"
+  dependencies:
+    history "^4.7.2"
+    hoist-non-react-statics "^2.3.0"
+    invariant "^2.2.2"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.5.4"
     warning "^3.0.0"
 
 react-side-effect@^1.1.0:
@@ -1779,9 +1802,9 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
 
-react-slick@~0.14.2:
-  version "0.14.11"
-  resolved "http://registry.npm.taobao.org/react-slick/download/react-slick-0.14.11.tgz#c2cbdbe3728c66a2ff4929be96d457e3ea0d80f3"
+react-slick@~0.16.0:
+  version "0.16.0"
+  resolved "http://registry.npm.taobao.org/react-slick/download/react-slick-0.16.0.tgz#27385fb88503d208be081d37267ddec961209a7b"
   dependencies:
     can-use-dom "^0.1.0"
     classnames "^2.2.5"
@@ -1791,22 +1814,14 @@ react-slick@~0.14.2:
     object-assign "^4.1.0"
     slick-carousel "^1.6.0"
 
-react-smooth@^0.1.15:
-  version "0.1.20"
-  resolved "http://registry.npm.taobao.org/react-smooth/download/react-smooth-0.1.20.tgz#0527eb60d0ee529e98720127aea5d3fbd2e59fb7"
+react@^16.2.0:
+  version "16.2.0"
+  resolved "http://registry.npm.taobao.org/react/download/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
-    lodash "^4.16.4"
-    raf "^3.2.0"
-    react-addons-transition-group "^0.14.0 || ^15.0.0"
-
-react@^15.3.2, react@^15.4.1:
-  version "15.5.4"
-  resolved "http://registry.npm.taobao.org/react/download/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
-  dependencies:
-    fbjs "^0.8.9"
+    fbjs "^0.8.16"
     loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.7"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 readable-stream@^2.2.2:
   version "2.2.9"
@@ -1828,68 +1843,41 @@ readline2@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     mute-stream "0.0.5"
 
-recharts-scale@^0.2.1:
-  version "0.2.3"
-  resolved "http://registry.npm.taobao.org/recharts-scale/download/recharts-scale-0.2.3.tgz#20d903a00b1758db0ded3fb2dfb370e41b958287"
-
-recharts@^0.19.0:
-  version "0.19.1"
-  resolved "http://registry.npm.taobao.org/recharts/download/recharts-0.19.1.tgz#7b23e63e1f6e905e139dde7e4e91eea863fd448d"
-  dependencies:
-    classnames "^2.2.5"
-    core-js "^2.4.1"
-    d3-scale "^1.0.4"
-    d3-shape "^1.0.4"
-    lodash "^4.17.2"
-    react-resize-detector "^0.3.3"
-    react-smooth "^0.1.15"
-    recharts-scale "^0.2.1"
-    reduce-css-calc "^1.3.0"
-
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "http://registry.npm.taobao.org/rechoir/download/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
   dependencies:
     resolve "^1.1.6"
 
-redbox-react@^1.2.10:
-  version "1.3.6"
-  resolved "http://registry.npm.taobao.org/redbox-react/download/redbox-react-1.3.6.tgz#70314c57c066257eb70b0a24dc794b5cef4f1c4e"
+redbox-react@^1.5.0:
+  version "1.5.0"
+  resolved "http://registry.npm.taobao.org/redbox-react/download/redbox-react-1.5.0.tgz#04dab11557d26651bf3562a67c22ace56c5d3967"
   dependencies:
     error-stack-parser "^1.3.6"
     object-assign "^4.0.1"
     prop-types "^15.5.4"
+    sourcemapped-stacktrace "^1.1.6"
 
-reduce-css-calc@^1.3.0:
-  version "1.3.0"
-  resolved "http://registry.npm.taobao.org/reduce-css-calc/download/reduce-css-calc-1.3.0.tgz#747c914e049614a4c9cfbba629871ad1d2927716"
-  dependencies:
-    balanced-match "^0.4.2"
-    math-expression-evaluator "^1.2.14"
-    reduce-function-call "^1.0.1"
+redux-saga@^0.15.4:
+  version "0.15.6"
+  resolved "http://registry.npm.taobao.org/redux-saga/download/redux-saga-0.15.6.tgz#8638dc522de6c6c0a496fe8b2b5466287ac2dc4d"
 
-reduce-function-call@^1.0.1:
-  version "1.0.2"
-  resolved "http://registry.npm.taobao.org/reduce-function-call/download/reduce-function-call-1.0.2.tgz#5a200bf92e0e37751752fe45b0ab330fd4b6be99"
-  dependencies:
-    balanced-match "^0.4.2"
-
-redux-saga@^0.14.0:
-  version "0.14.8"
-  resolved "http://registry.npm.taobao.org/redux-saga/download/redux-saga-0.14.8.tgz#ad01afabe02ec41a17df54e2e09aa236b30a7732"
-
-redux@^3.6.0:
-  version "3.6.0"
-  resolved "http://registry.npm.taobao.org/redux/download/redux-3.6.0.tgz#887c2b3d0b9bd86eca2be70571c27654c19e188d"
+redux@^3.7.1, redux@^3.7.2:
+  version "3.7.2"
+  resolved "http://registry.npm.taobao.org/redux/download/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
   dependencies:
     lodash "^4.2.1"
     lodash-es "^4.2.1"
     loose-envify "^1.1.0"
-    symbol-observable "^1.0.2"
+    symbol-observable "^1.0.3"
 
 regenerator-runtime@^0.10.0:
   version "0.10.5"
   resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
+
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
 require-uncached@^1.0.2:
   version "1.0.3"
@@ -1901,6 +1889,10 @@ require-uncached@^1.0.2:
 resolve-from@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/resolve-from/download/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
+
+resolve-pathname@^2.2.0:
+  version "2.2.0"
+  resolved "http://registry.npm.taobao.org/resolve-pathname/download/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
 
 resolve@^1.1.6:
   version "1.3.3"
@@ -1921,6 +1913,13 @@ rimraf@^2.2.8:
   dependencies:
     glob "^7.0.5"
 
+rmc-feedback@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/rmc-feedback/download/rmc-feedback-1.0.4.tgz#fba066059ae2057ac0e0b53ea7ce982c8f4f7f19"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.5"
+
 run-async@^0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.taobao.org/run-async/download/run-async-0.1.0.tgz#c8ad4a5e110661e402a7d21b530e009f25f8e389"
@@ -1939,11 +1938,15 @@ shallow-equal@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/shallow-equal/download/shallow-equal-1.0.0.tgz#508d1838b3de590ab8757b011b25e430900945f7"
 
-shallowequal@0.2.x, shallowequal@^0.2.2:
+shallowequal@^0.2.2:
   version "0.2.2"
   resolved "http://registry.npm.taobao.org/shallowequal/download/shallowequal-0.2.2.tgz#1e32fd5bcab6ad688a4812cb0cc04efc75c7014e"
   dependencies:
     lodash.keys "^3.1.2"
+
+shallowequal@^1.0.1, shallowequal@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/shallowequal/download/shallowequal-1.0.2.tgz#1561dbdefb8c01408100319085764da3fcf83f8f"
 
 shelljs@^0.7.5:
   version "0.7.7"
@@ -1962,6 +1965,16 @@ slick-carousel@^1.6.0:
   resolved "http://registry.npm.taobao.org/slick-carousel/download/slick-carousel-1.6.0.tgz#780f378e470f4e6f6bec1aa2bae0475f4f9eb085"
   dependencies:
     jquery ">=1.7.2"
+
+source-map@0.5.6:
+  version "0.5.6"
+  resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+
+sourcemapped-stacktrace@^1.1.6:
+  version "1.1.8"
+  resolved "http://registry.npm.taobao.org/sourcemapped-stacktrace/download/sourcemapped-stacktrace-1.1.8.tgz#6b7a3f1a6fb15f6d40e701e23ce404553480d688"
+  dependencies:
+    source-map "0.5.6"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -2022,9 +2035,9 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/supports-color/download/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-symbol-observable@^1.0.2:
-  version "1.0.4"
-  resolved "http://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
+symbol-observable@^1.0.3:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 table@^3.7.8:
   version "3.8.3"
@@ -2048,6 +2061,10 @@ through@^2.3.6:
 to-fast-properties@^1.0.1:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/to-fast-properties/download/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
+
+to-fast-properties@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/to-fast-properties/download/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
 tryit@^1.0.1:
   version "1.0.3"
@@ -2085,7 +2102,11 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-warning@2.x, warning@^2.0.0:
+value-equal@^0.4.0:
+  version "0.4.0"
+  resolved "http://registry.npm.taobao.org/value-equal/download/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
+
+warning@2.x:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/warning/download/warning-2.1.0.tgz#21220d9c63afc77a8c92111e011af705ce0c6901"
   dependencies:

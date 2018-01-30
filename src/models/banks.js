@@ -2,7 +2,7 @@ import { create, remove, update, query,queryByID,status } from '../services/bank
 import { saveRelatedQuestions ,queryRecords,queryRelatedQuestions,removeRelatedQuestions } from '../services/banks'
 import { removeRelatedTag,saveTag,relatingTag,getTags,queryAllTags,deleteTag } from '../services/banks'
 import { parse } from 'qs'
-
+import queryString from 'query-string'
 export default {
 
   namespace: 'banks',
@@ -46,17 +46,17 @@ export default {
 
   subscriptions: {
     setup ({ dispatch, history }) {
-      history.listen(location => {
-        if (location.pathname === '/admin/banks') {
+      history.listen(({ pathname, search }) => {
+        if (pathname === '/admin/banks') {
           dispatch({
             type: 'query',
-            payload: location.query,
+            payload:  queryString.parse(search),
           })
         }
 
         let re = /\/admin\/banks\/(.*)/g 
         //匹配URL 中的ID ：/admin/banks/1  
-        let query = re.exec(location.pathname)
+        let query = re.exec(pathname)
         if (!( _.isEmpty(query))) {
           if ( query[1] > 0  ) {
             //依赖于所有问题列表

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Form, Input, InputNumber, Radio, Modal } from 'antd'
 import  AddBankForm  from './AddBankForm'
 const FormItem = Form.Item

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'dva'
 import { Form ,Upload,Modal,Icon,Switch,Input,Button,message ,Row, Col  } from 'antd'
 import { EditableTagGroup,EditableTagTree } from '../../components/tag'

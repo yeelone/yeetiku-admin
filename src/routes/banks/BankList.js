@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Table, Modal,Switch,Button  } from 'antd';
 import styles from './BankList.less';
 import classnames from 'classnames';
