@@ -24,11 +24,11 @@ export default {
         dispatch({ type: 'changeNavbar' })
       }
 
-      // history.listen(location => {
-      //   if (location.pathname ) {
-      //     dispatch({ type: 'queryCurrentUser'})
-      //   }
-      // })
+      history.listen(location => {
+        if (location.pathname ) {
+          dispatch({ type: 'queryCurrentUser'})
+        }
+      })
     },
   },
 
@@ -69,7 +69,7 @@ export default {
     }, { call, put }) {
       const data = yield call(logout, parse(payload))
       removeToken()
-      window.location = `${location.origin}/admin/login`
+      window.location = `${location.origin}/admin/login/`
     },
     *switchSider ({
       payload,

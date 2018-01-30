@@ -1,7 +1,10 @@
-import React, { PropTypes,Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import { connect } from 'dva'
 import { Tabs   } from 'antd'
 import { config } from '../../utils'
+import App from '../app'
 import BaseInfo from './BaseInfo'
 import RelatedQuestions from './RelatedQuestions'
 import Records from './Records'
@@ -39,6 +42,8 @@ function  detail({ dispatch,banks,location }){
     }
 
     return (
+        
+    <App location={location}>
         <Tabs type="card" onChange={ _getRelatedQuestion }>
             <TabPane tab="基本信息" key="1">
                     <BaseInfo  {...BaseInfoProps}  />
@@ -50,6 +55,7 @@ function  detail({ dispatch,banks,location }){
                 <Records {...BaseInfoProps} />
             </TabPane>
         </Tabs>
+    </App>
     )
 }
 

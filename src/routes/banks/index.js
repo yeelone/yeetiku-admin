@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
+import queryString from 'query-string'
 import BankList from './BankList'
 import BankFilter from './BankFilter'
 import BankModal from './BankModal'
 import RecordModal from './RecordModal'
-
+import App from '../app'
 import { Layout  } from 'antd'
 const {  Sider, Content } = Layout
 
@@ -14,7 +15,9 @@ import styles from './styles.less'
 
 function Banks ({ location, dispatch, banks,categories, loading }) {
   const { list, pagination, currentItem, modalVisible,recordModalVisible, modalType, isMotion } = banks
-  const { field, keyword } = location.query
+  // const query = queryString.parse(location.search)
+  var { field, keyword } = queryString.parse(location.search)
+  const query = { field, keyword }
 
   const BankModalProps = {
     item: modalType === 'create' ? {} : currentItem,
@@ -49,7 +52,7 @@ function Banks ({ location, dispatch, banks,categories, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { query, pathname } = location
+      const { pathname } = location
       dispatch(routerRedux.push({
         pathname,
         query: {
@@ -98,8 +101,7 @@ function Banks ({ location, dispatch, banks,categories, loading }) {
   }
 
   const BankFilterProps = {
-    field,
-    keyword,
+    ...query,
     isMotion,
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
@@ -134,11 +136,11 @@ function Banks ({ location, dispatch, banks,categories, loading }) {
   }
 
   return (
-    <div >
+    <App location={location}>
           <BankFilter {...BankFilterProps} />
           <BankList {...BankListProps} />
           <BankModalGen />
-    </div>
+    </App>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Table, Modal } from 'antd'
+import queryString from 'query-string'
 import styles from './GroupList.less'
 import classnames from 'classnames'
 import { DropOption,UsersSelector } from '../../components'
@@ -8,6 +9,9 @@ import { DropOption,UsersSelector } from '../../components'
 const confirm = Modal.confirm
 
 function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, onEditItem,onSelectUsers, isMotion, location }) {
+  const {search, pathname } = location
+  var query = queryString.parse(search)
+
   const handleMenuClick = (record, e) => {
     if (e.key === '1') {
       onEditItem(record)
@@ -17,7 +21,7 @@ function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, on
       confirm({
         title: '您确定要删除这条记录吗?',
         onOk () {
-          onDeleteItem(record.id);
+          onDeleteItem(record.id) 
         },
       })
     }
@@ -43,12 +47,12 @@ function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, on
         return <DropOption onMenuClick={e => handleMenuClick(record, e)} menuOptions={[{ key: '1', name: '编辑' },{ key: '2', name: '关联用户' }, { key: '3', name: '删除' }]} />
       },
     },
-  ];
+  ] 
 
   const getBodyWrapperProps = {
-    page: location.query.page,
+    page: query.page,
     current: pagination.current,
-  };
+  } 
 
   return (
     <div>
@@ -80,4 +84,4 @@ list.propTypes = {
   location: PropTypes.object,
 }
 
-  export default list;
+  export default list 

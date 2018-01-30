@@ -4,6 +4,8 @@ import { connect } from 'dva'
 import { Form,Input,Upload,message,Icon,Button,Modal,Row, Col  } from 'antd'
 import styles from './index.less'
 import { config } from '../../utils'
+import App from '../app'
+
 const FormItem = Form.Item
 const { server,baseURL,api } = config
 const formItemLayout = {
@@ -41,7 +43,6 @@ function Client ({ client, dispatch,
                     splashImage,
                     logoImage
                 }
-                console.log(data)
                 dispatch({
                   type: 'client/saveAppConfig',
                   payload:{
@@ -99,6 +100,7 @@ function Client ({ client, dispatch,
     }
 
     return (
+      <App location={location}>
       <div>
         <Row>
           <Col span={14}>
@@ -171,6 +173,7 @@ function Client ({ client, dispatch,
             </Col>
         </Row>
       </div>
+      </App>
     )
 }
 

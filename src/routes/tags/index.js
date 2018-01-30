@@ -2,14 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
-
+import queryString from 'query-string'
+import App from '../app'
 import TagList from './TagList'
 import TagModal from './TagModal'
 import TagFilter from './TagFilter'
 
 function Tags ({ location, dispatch, tags, loading }) {
   const { list, pagination, currentItem, modalVisible, modalType, isMotion } = tags
-  const { field, keyword } = location.query
+  const { search, pathname } = location
+  var query = queryString.parse(search)
 
   const tagModalProps = {
     item: modalType === 'create' ? {} : currentItem,
@@ -35,7 +37,6 @@ function Tags ({ location, dispatch, tags, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { query, pathname } = location
       dispatch(routerRedux.push({
         pathname,
         query: {
@@ -63,8 +64,7 @@ function Tags ({ location, dispatch, tags, loading }) {
   }
 
   const tagFilterProps = {
-    field,
-    keyword,
+    ...query,
     isMotion,
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
@@ -94,11 +94,13 @@ function Tags ({ location, dispatch, tags, loading }) {
     <TagModal {...tagModalProps} />
 
   return (
+    <App location={location}>
     <div className="content-inner">
         <TagFilter {...tagFilterProps} />
         <TagList {...tagListProps} />
         <TagModalGen />
     </div>
+    </App>
   )
 }
 

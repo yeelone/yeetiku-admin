@@ -1,7 +1,7 @@
 import { create, remove, update, query,queryRelatedUsers,addUsers } from '../services/groups'
-import { routerRedux } from 'dva/router';
+import { routerRedux } from 'dva/router'
 import { parse } from 'qs'
-
+import queryString from 'query-string'
 export default {
 
   namespace: 'groups',
@@ -25,11 +25,11 @@ export default {
   },
   subscriptions: {
     setup ({ dispatch, history }) {
-      history.listen(location => {
-        if (location.pathname === '/admin/groups') {
+      history.listen(({search,pathname}) => {
+        if (pathname === '/admin/groups') {
           dispatch({
             type: 'query',
-            payload: location.query,
+            payload: queryString.parse(search),
           })
         }
       })

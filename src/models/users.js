@@ -1,6 +1,6 @@
 import { create, remove, update, query,reset } from '../services/users'
 import { parse } from 'qs'
-
+import queryString from 'query-string'
 export default {
 
   namespace: 'users',
@@ -23,11 +23,11 @@ export default {
 
   subscriptions: {
     setup ({ dispatch, history }) {
-      history.listen(location => {
-        if (location.pathname === '/admin/users') {
+      history.listen(({search,pathname}) => {
+        if (pathname === '/admin/users') {
           dispatch({
             type: 'query',
-            payload: location.query,
+            payload: queryString.parse(search),
           })
         }
       })

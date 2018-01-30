@@ -2,13 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
+import queryString from 'query-string'
+import App from '../app'
 import UserList from './UserList'
 import UserFilter from './UserFilter'
 import UserModal from './UserModal'
 
 function Users ({ location, dispatch, users, loading }) {
   const { list, pagination, currentItem, modalVisible, modalType, isMotion } = users
-  const { field, keyword } = location.query
+  const {search, pathname } = location
+  var query = queryString.parse(search)
 
   const userModalProps = {
     item: modalType === 'create' ? {} : currentItem,
@@ -34,7 +37,6 @@ function Users ({ location, dispatch, users, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { query, pathname } = location
       dispatch(routerRedux.push({
         pathname,
         query: {
@@ -72,8 +74,7 @@ function Users ({ location, dispatch, users, loading }) {
   }
 
   const userFilterProps = {
-    field,
-    keyword,
+    ...query,
     isMotion,
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
@@ -103,11 +104,13 @@ function Users ({ location, dispatch, users, loading }) {
     <UserModal {...userModalProps} />
 
   return (
+    <App location={location}>
     <div className="content-inner">
       <UserFilter {...userFilterProps} />
       <UserList {...userListProps} />
       <UserModalGen />
     </div>
+    </App>
   )
 }
 

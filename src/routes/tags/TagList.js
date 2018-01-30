@@ -1,21 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Table, Modal } from 'antd';
-import styles from './TagList.less';
-import classnames from 'classnames';
-import { DropOption } from '../../components';
+import { Table, Modal } from 'antd' 
+import styles from './TagList.less' 
+import classnames from 'classnames' 
+import { DropOption } from '../../components' 
 
-const confirm = Modal.confirm;
+const confirm = Modal.confirm 
 
 function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, onEditItem, isMotion, location }) {
+  const { search, pathname } = location
   const handleMenuClick = (record, e) => {
     if (e.key === '1') {
-      onEditItem(record);
+      onEditItem(record) 
     } else if (e.key === '2') {
       confirm({
         title: '您确定要删除这条记录吗?',
         onOk () {
-          onDeleteItem(record.id);
+          onDeleteItem(record.id) 
         },
       })
     }
@@ -41,12 +42,7 @@ function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, on
         return <DropOption onMenuClick={e => handleMenuClick(record, e)} menuOptions={[{ key: '1', name: '编辑' }, { key: '2', name: '删除' }]} />
       },
     },
-  ];
-
-  const getBodyWrapperProps = {
-    page: location.query.page,
-    current: pagination.current,
-  };
+  ] 
 
   return (
     <div>
@@ -77,4 +73,4 @@ list.propTypes = {
   location: PropTypes.object,
 }
 
-export default list;
+export default list 

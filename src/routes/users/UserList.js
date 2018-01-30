@@ -1,30 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Table, Modal,Avatar } from 'antd';
-import styles from './UserList.less';
-import classnames from 'classnames';
-import { DropOption } from '../../components';
-import { config } from '../../utils';
+import { Table, Modal,Avatar } from 'antd' 
+import queryString from 'query-string'
+import styles from './UserList.less' 
+import classnames from 'classnames' 
+import { DropOption } from '../../components' 
+import { config } from '../../utils' 
 
 
-const confirm = Modal.confirm;
+const confirm = Modal.confirm 
 
 function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, onResetPasswordItem,onEditItem, isMotion, location }) {
+  const {search, pathname } = location
+  var { field, keyword } = queryString.parse(search)
+  const query = { field, keyword }
+
+
   const handleMenuClick = (record, e) => {
     if (e.key === '1') {
-      onEditItem(record);
+      onEditItem(record) 
     }else if (e.key === '2') {
       confirm({
         title: '此操作将重置用户密码为123456?',
         onOk () {
-          onResetPasswordItem(record.id);
+          onResetPasswordItem(record.id) 
         },
       })
     } else if (e.key === '3') {
       confirm({
         title: '您确定要删除这条记录吗?',
         onOk () {
-          onDeleteItem(record.id);
+          onDeleteItem(record.id) 
         },
       })
     }
@@ -88,12 +94,12 @@ function list ({ loading, dataSource, pagination, onPageChange, onDeleteItem, on
         return <DropOption onMenuClick={e => handleMenuClick(record, e)} menuOptions={[{ key: '1', name: '编辑' },{ key: '2', name: '重置密码' }, { key: '3', name: '删除' }]} />
       },
     },
-  ];
+  ] 
 
   const getBodyWrapperProps = {
-    page: location.query.page,
+    page: query.page,
     current: pagination.current,
-  };
+  } 
 
   return (
     <div>
@@ -124,4 +130,4 @@ list.propTypes = {
   location: PropTypes.object,
 }
 
-export default list;
+export default list 

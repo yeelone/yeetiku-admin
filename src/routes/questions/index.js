@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
+import queryString from 'query-string'
+import App from '../app'
 import QuestionList from './QuestionList'
 import QuestionFilter from './QuestionFilter'
 import QuestionModal from './QuestionModal'
@@ -15,7 +17,9 @@ import styles from './styles.less'
 
 function Questions ({ location, dispatch, questions,categories, loading }) {
   const { list, pagination, currentItem, modalVisible, modalType, isMotion,importModalVisible,importResult } = questions
-  const { field, keyword } = location.query
+  const {search, pathname } = location
+  var { field, keyword } = queryString.parse(search)
+  const query = { field, keyword }
 
   const QuestionModalProps = {
     item: modalType === 'create' ? {} : currentItem,
@@ -75,7 +79,6 @@ function Questions ({ location, dispatch, questions,categories, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { query, pathname } = location
       dispatch(routerRedux.push({
         pathname,
         query: {
@@ -159,6 +162,7 @@ function Questions ({ location, dispatch, questions,categories, loading }) {
 
 
   return (
+    <App location={location}>
     <div className="content-inner"> 
       <Layout className={styles.layout}>
         <Sider className={styles.layout_sider}>
@@ -172,6 +176,7 @@ function Questions ({ location, dispatch, questions,categories, loading }) {
         </Content>
       </Layout>
     </div>
+    </App>
   )
 }
 

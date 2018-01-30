@@ -1,33 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Table, Modal,Switch,Button  } from 'antd';
-import styles from './BankList.less';
-import classnames from 'classnames';
-import { DropOption } from '../../components';
+import queryString from 'query-string'
+import { Table, Modal,Switch,Button  } from 'antd' 
+import styles from './BankList.less' 
+import classnames from 'classnames' 
+import { DropOption } from '../../components' 
 import { Link } from 'dva/router'
 
-const confirm = Modal.confirm;
+const confirm = Modal.confirm 
 
 function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPageChange,onRecordClick, onDeleteItem, onEditItem, isMotion, location }) {
+  var query = queryString.parse(location.search)
+
   const handleMenuClick = (record, e) => {
     if (e.key === '1') {
-      onEditItem(record);
+      onEditItem(record) 
     } else if (e.key === '2') {
       confirm({
         title: '您确定要删除这条记录吗?',
         onOk () {
-          onDeleteItem(record.id);
+          onDeleteItem(record.id) 
         },
       })
     }
   }
 
   const handleStatusChange = (item) => {
-        onStatusChange(item);
+        onStatusChange(item) 
   }
 
   const handleRecordClick = (item) => {
-    onRecordClick(item);
+    onRecordClick(item) 
   }
 
   const columns = [
@@ -37,7 +40,7 @@ function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPa
       key: 'id',
       width: '5%',
         render: (id, record) => {
-        const { query, pathname } = location
+        const { pathname } = location
         const path = pathname
         return <Link to={pathname + "/"  +id }  > {id}  </Link>
       } ,
@@ -48,7 +51,7 @@ function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPa
       key:"name",
       width: '35%',
       render: (text,record) => {
-        const { query, pathname } = location
+        const { pathname } = location
         const path = pathname
         return <Link to={pathname + "/"  + record.id }  > {text}  </Link>
       } ,
@@ -82,12 +85,12 @@ function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPa
           )
         },
     },
-  ];
+  ] 
 
   const getBodyWrapperProps = {
-    page: location.query.page,
+    page: query.page,
     current: pagination.current,
-  };
+  } 
 
   return (
     <div>
@@ -120,4 +123,4 @@ list.propTypes = {
   location: PropTypes.object,
 }
 
-export default list;
+export default list 

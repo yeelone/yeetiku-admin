@@ -9,7 +9,7 @@ import '../themes/index.less'
 
 const { Header, Bread, Footer, Sider, styles } = Layout
 
-const AdminApp = ({ children, location, dispatch, app,messager }) => {
+const AdminApp = ({ children,location, dispatch, app,messager }) => {
   const { user, siderFold, darkTheme, isNavbar, menuPopoverVisible, navOpenKeys } = app
   
   const headerProps = {
@@ -52,7 +52,6 @@ const AdminApp = ({ children, location, dispatch, app,messager }) => {
     return <div>{children}</div>
   }
 
-  
   return (
     <div>
       <Helmet>
@@ -86,7 +85,6 @@ const AdminApp = ({ children, location, dispatch, app,messager }) => {
 }
 
 AdminApp.propTypes = {
-  children: PropTypes.element.isRequired,
   location: PropTypes.object,
   dispatch: PropTypes.func,
   app: PropTypes.object,

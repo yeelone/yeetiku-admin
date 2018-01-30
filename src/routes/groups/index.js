@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
-
+import queryString from 'query-string'
+import App from '../app'
 import GroupList from './GroupList'
 import GroupModal from './GroupModal'
 import GroupFilter from './GroupFilter'
@@ -11,7 +12,8 @@ import { Selector }  from '../../components/'
 
 function Groups ({ location, dispatch, groups , users, loading }) {
   const { list,relateUserList, pagination, currentItem, modalVisible,selectorVisible, modalType, isMotion } = groups
-  const { field, keyword } = location.query
+  const {search, pathname } = location
+  var query = queryString.parse(search)
 
   const groupModalProps = {
     item: modalType === 'create' ? {} : currentItem,
@@ -37,7 +39,6 @@ function Groups ({ location, dispatch, groups , users, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { query, pathname } = location
       dispatch(routerRedux.push({
         pathname,
         query: {
@@ -80,8 +81,7 @@ function Groups ({ location, dispatch, groups , users, loading }) {
   }
 
   const groupFilterProps = {
-    field,
-    keyword,
+    ...query,
     isMotion,
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
@@ -144,12 +144,14 @@ function Groups ({ location, dispatch, groups , users, loading }) {
   const SelectorGen = () => <Selector {...selectorProps} />
 
   return (
+    <App location={location}>
     <div className="content-inner">
         <GroupFilter {...groupFilterProps} />
         <GroupList {...groupListProps} />
         <GroupModalGen />
         <SelectorGen />
     </div>
+    </App>
   )
 }
 

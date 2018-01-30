@@ -13,7 +13,7 @@ const QUES_TYPE = {
   'truefalse':'判断题',
   'filling':'填空题'
 }
-function list ({ loading, dataSource,categories, pagination,dispatch, onPageChange, onDeleteItem,onMoveItem, onEditItem, isMotion, location }) {
+function list ({ loading, dataSource,categories, pagination,dispatch, onPageChange, onDeleteItem,onMoveItem, onEditItem, isMotion }) {
   const CategoriesProps = {
     categories,
     dispatch,
@@ -122,7 +122,6 @@ list.propTypes = {
   onDeleteItem: PropTypes.func,
   onEditItem: PropTypes.func,
   isMotion: PropTypes.bool,
-  location: PropTypes.object,
 }
 
 export default list

@@ -1,6 +1,6 @@
 import { create, remove, update, query,queryByID,queryImportResult, changeCategory ,removeImportResult} from '../services/questions'
 import { parse } from 'qs'
-
+import queryString from 'query-string'
 export default {
 
   namespace: 'questions',
@@ -25,11 +25,13 @@ export default {
 
   subscriptions: {
     setup ({ dispatch, history }) {
-      history.listen(location => {
-        if (location.pathname === '/admin/questions'  ) {
+      history.listen( ({pathname,search}) => {
+        var query = queryString.parse(location.search)
+
+        if (pathname === '/admin/questions'  ) {
           dispatch({
             type: 'query',
-            payload: location.query,
+            payload: query,
           })
           dispatch({
             type:'queryImportResult',

@@ -5,7 +5,7 @@ import { Card  } from 'antd'
 import { Link } from 'dva/router'
 import styles from './index.less'
 import { color,menu } from '../../utils'
-
+import App from '../app'
 
 const DefindColors = ["#1abc9c","#3498db","#f1c40f","#e67e22", "#e74c3c","#2ecc71"]
 
@@ -33,9 +33,11 @@ function getMenus(){
 
 function Dashboard ({ dashboard }) {
   return (
-    <div>
-      {getMenus()}
-    </div>
+    <App location={location}>
+      <div>
+        {getMenus()}
+      </div>
+    </App>
   )
 }
 
