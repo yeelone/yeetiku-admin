@@ -1,14 +1,14 @@
 import React from 'react'
 import { Input,Button  } from 'antd'
 
-export default class AddInput extends React.Component {
+export default class AddInput2 extends React.Component {
     componentDidMount(){
-        this.myInput.focus()
+        // this.myInput.focus()
         // this.myInput.setSelectionRange(0, this.myInput.value.length)
     }
 
     handleClick = () => {
-        this.myInput.focus()
+        // this.myInput.focus()
         // this.myInput.setSelectionRange(0, this.myInput.value.length)
     }
 

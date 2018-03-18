@@ -1,4 +1,4 @@
-const host = '127.0.0.1'
+const host = '192.168.123.87'
 
 module.exports = {
   name: 'YEETIKU Admin',

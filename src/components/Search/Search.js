@@ -41,7 +41,7 @@ class Search extends React.Component {
     const { size, select, selectOptions, selectProps, style, keyword } = this.props
     const { clearVisible } = this.state
     return (
-      <Input.Group compact size={size} className={styles.search} style={style}>
+      <Input.Group size={size} className={styles.search} style={style}>
         {select && <Select ref="searchSelect" onChange={this.handeleSelectChange} size={size} {...selectProps}>
           {selectOptions && selectOptions.map((item, key) => <Select.Option value={item.value} key={key}>{item.name || item.value}</Select.Option>)}
         </Select>}

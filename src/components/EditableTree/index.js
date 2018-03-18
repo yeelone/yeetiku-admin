@@ -15,15 +15,13 @@ function randomInt(start, end){
 */
 class AddInput extends React.Component {
     componentDidMount(){
-        const input = this.refs.myInput.refs.input
-        input.focus()
-        input.setSelectionRange(0, input.value.length)
+        this.myInput.focus()
+        // this.myInput.setSelectionRange(0, this.myInput.value.length)
     }
 
     handleClick = () => {
-        const input = this.refs.myInput.refs.input
-        input.focus()
-        input.setSelectionRange(0, input.value.length)
+        this.myInput.focus()
+        // input.setSelectionRange(0, input.value.length)
     }
 
     onBlur = (e) =>{
@@ -37,7 +35,7 @@ class AddInput extends React.Component {
     render(){
         return (
             <div>
-                <Input ref="myInput" defaultValue={this.props.defaultValue} onBlur={this.onBlur} onPressEnter={this.handlerPressEnter}/>
+                <Input ref={node => this.myInput = node}  defaultValue={this.props.defaultValue} onBlur={this.onBlur} onPressEnter={this.handlerPressEnter}/>
             </div>
         )
     }
