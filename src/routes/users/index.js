@@ -38,13 +38,13 @@ function Users ({ location, dispatch, users, loading }) {
     isMotion,
     onPageChange (page) {
       dispatch(routerRedux.push({
-        pathname,
-        query: {
-          ...query,
-          page: page.current,
-          pageSize: page.pageSize
-        },
-      }))
+        ...location,
+        search:'?'+queryString.stringify({
+            ...queryString.parse(search),
+            page: page.current,
+            pageSize: page.pageSize
+        }),
+    }))
     },
     onResetPasswordItem(id){
       dispatch({
@@ -79,10 +79,7 @@ function Users ({ location, dispatch, users, loading }) {
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
         pathname: '/admin/users',
-        query: {
-          field: fieldsValue.field,
-          keyword: fieldsValue.keyword,
-        },
+        search:'?field='+fieldsValue.field+'&keyword='+fieldsValue.keyword,
       })) : dispatch(routerRedux.push({
         pathname: '/admin/users',
       }))

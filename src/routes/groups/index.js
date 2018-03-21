@@ -40,13 +40,13 @@ function Groups ({ location, dispatch, groups , users, loading }) {
     isMotion,
     onPageChange (page) {
       dispatch(routerRedux.push({
-        pathname,
-        query: {
-          ...query,
-          page: page.current,
-          pageSize: page.pageSize
-        },
-      }))
+        ...location,
+        search:'?'+queryString.stringify({
+            ...queryString.parse(search),
+            page: page.current,
+            pageSize: page.pageSize
+        }),
+    }))
     },
     onDeleteItem (id) {
       dispatch({
@@ -86,10 +86,7 @@ function Groups ({ location, dispatch, groups , users, loading }) {
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
         pathname: '/admin/groups',
-        query: {
-          field: fieldsValue.field,
-          keyword: fieldsValue.keyword,
-        },
+        search:'?field='+fieldsValue.field+'&keyword='+fieldsValue.keyword,
       })) : dispatch(routerRedux.push({
         pathname: '/admin/groups',
       }))

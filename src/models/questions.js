@@ -26,7 +26,7 @@ export default {
   subscriptions: {
     setup ({ dispatch, history }) {
       history.listen( ({pathname,search}) => {
-        var query = queryString.parse(location.search)
+        var query = queryString.parse(search)
 
         if (pathname === '/admin/questions'  ) {
           dispatch({

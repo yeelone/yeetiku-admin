@@ -52,14 +52,13 @@ function Banks ({ location, dispatch, banks,categories, loading }) {
     location,
     isMotion,
     onPageChange (page) {
-      const { pathname } = location
       dispatch(routerRedux.push({
-        pathname,
-        query: {
-          ...query,
-          page: page.current,
-          pageSize: page.pageSize
-        },
+          ...location,
+          search:'?'+queryString.stringify({
+            ...queryString.parse(location.search),
+            page: page.current,
+            pageSize: page.pageSize
+          }),
       }))
     },
     onStatusChange(item) {
@@ -106,10 +105,7 @@ function Banks ({ location, dispatch, banks,categories, loading }) {
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
         pathname: '/admin/banks',
-        query: {
-          field: fieldsValue.field,
-          keyword: fieldsValue.keyword,
-        },
+        search:'?field='+fieldsValue.field+'&keyword='+fieldsValue.keyword,
       })) : dispatch(routerRedux.push({
         pathname: '/admin/banks',
       }))

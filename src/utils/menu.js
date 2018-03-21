@@ -31,6 +31,11 @@ module.exports = [
       icon: 'database',
     },
     {
+      key: prefix + 'comments',
+      name: '评论管理',
+      icon: 'message',
+    },
+    {
       key: prefix + 'client',
       name: '客户端设置',
       icon: 'tablet',

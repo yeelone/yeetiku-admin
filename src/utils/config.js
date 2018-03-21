@@ -21,6 +21,7 @@ module.exports = {
     questions: '/questions',
     categories:'categories',
     banks:'/banks',
+    comments:'/comments',
     upload:'/upload',
     client:'/client',
     notification:'/notification',

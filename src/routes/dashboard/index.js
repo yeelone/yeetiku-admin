@@ -7,7 +7,7 @@ import styles from './index.less'
 import { color,menu } from '../../utils'
 import App from '../app'
 
-const DefindColors = ["#1abc9c","#3498db","#f1c40f","#e67e22", "#e74c3c","#2ecc71"]
+const DefindColors = ["#1abc9c","#3498db","#f1c40f","#e67e22", "#e74c3c","#2ecc71","#6c5ce7","#2d3436"]
 
 const bodyStyle = {
   bodyStyle: {
