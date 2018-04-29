@@ -73,6 +73,15 @@ function RouterConfig({ history, app }) {
     component: () => require('./routes/banks/'),
   }) 
 
+  const Feedback = dynamic({
+    app,
+    models: () => [
+      require('./models/feedbacks'),
+    ],
+    component: () => require('./routes/feedback/'),
+  }) 
+
+
   const BankDetail = dynamic({
     app,
     models: () => [
@@ -105,6 +114,7 @@ function RouterConfig({ history, app }) {
             <Route exact path="/admin/login" component={AdminLogin} />
             <Route exact path="/admin/comments" component={Comments} />
             <Route exact path="/admin/client" component={ClientConfig} />
+            <Route exact path="/admin/feedback" component={Feedback} />
           </Switch>
         </Router>
       ) 

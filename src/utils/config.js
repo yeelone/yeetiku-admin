@@ -1,4 +1,4 @@
-const host = '192.168.123.87'
+const host = 'yeetiku.com'
 
 module.exports = {
   name: 'YEETIKU Admin',
@@ -25,6 +25,7 @@ module.exports = {
     upload:'/upload',
     client:'/client',
     notification:'/notification',
+    feedback:'feedback',
   },
   templates:{
     questions: "/download/import_questions_template.xlsx"

@@ -36,6 +36,11 @@ module.exports = [
       icon: 'message',
     },
     {
+      key: prefix + 'feedback',
+      name: '回馈管理',
+      icon: 'question-circle-o',
+    },
+    {
       key: prefix + 'client',
       name: '客户端设置',
       icon: 'tablet',

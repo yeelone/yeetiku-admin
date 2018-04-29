@@ -5,7 +5,7 @@ import lodash from 'lodash'
 
 var http = axios.create({
   baseURL: baseURL,
-  timeout: 1000,
+  timeout: 5000,
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ export default function request (options) {
       message = data.message || statusText
     } else {
       status = 600
-      message = 'Network Error'
+      message = 'Network Error' + error 
     }
     return { success: false, status, message }
   })

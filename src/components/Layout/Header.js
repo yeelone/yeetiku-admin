@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Menu, Icon, Popover } from 'antd'
 import styles from './Header.less'
 import Menus from './Menu'
-import  Notification  from '../notification'
+import Notification  from '../notification'
 
 const SubMenu = Menu.SubMenu
 

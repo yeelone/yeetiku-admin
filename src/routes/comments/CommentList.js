@@ -45,13 +45,13 @@ function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPa
     },
     {
       title:"用户",
-      dataIndex:"username",
-      key:"username",
+      dataIndex:"user",
+      key:"user",
       width: '10%',
       render: (text,record) => {
         const { pathname } = location
         const path = pathname
-        return <Link to={pathname + "/"  + record.id }  > {text}  </Link>
+        return <Link to={pathname + "/"  + record.user.id }  > {record.user.nickname}  </Link>
       } ,
     },
     {
@@ -59,6 +59,18 @@ function list ({ loading, dataSource,openDetail, pagination,onStatusChange, onPa
       dataIndex:"content",
       key:"content",
       width: '35%',
+    },
+    {
+      title:"赞",
+      dataIndex:"like",
+      key:"like",
+      width: '5%',
+    },
+    {
+      title:"踩",
+      dataIndex:"down",
+      key:"down",
+      width: '5%',
     },
     {
         title: '操作',

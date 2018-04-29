@@ -29,6 +29,7 @@ const Login = ({
 
   return (
     <div className={styles.form}>
+      <div className={styles.formBody}>
       <div className={styles.logo}>
         <img alt={'logo'} src={config.logo} />
         <span>{config.name}</span>
@@ -61,6 +62,7 @@ const Login = ({
         </Row>
 
       </form>
+      </div>
     </div>
   )
 }
