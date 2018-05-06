@@ -5,6 +5,7 @@ import Search from './Search'
 import * as Layout from './Layout/index.js'
 import Notification from './notification'
 import EditableTagGroup from './tag' 
+import RichInput from './input' 
 
 import layer from './layer'
 
@@ -21,4 +22,5 @@ export {
   Selector,
   Notification,
   EditableTagGroup,
+  RichInput,
  }

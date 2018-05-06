@@ -49,7 +49,7 @@ function list ({ loading, dataSource,categories, pagination,dispatch, onPageChan
       title: 'ID',
       dataIndex: 'id',
       key: 'id',
-      width: '5%',
+      width: '10%',
       className: styles.avatar,
       render: (id) => <a href="#" > {id}  </a>,
     }, 
@@ -57,7 +57,7 @@ function list ({ loading, dataSource,categories, pagination,dispatch, onPageChan
       title:"主题",
       dataIndex:"subject",
       key:"subject",
-      width: '45%',
+      width: '35%',
     },
     {
         title:"分数",
@@ -73,6 +73,12 @@ function list ({ loading, dataSource,categories, pagination,dispatch, onPageChan
         render:(text) => {
           return <Rate allowHalf defaultValue={text} count={3} style={{ fontSize: 10 }}/>
         }
+    },
+    {
+      title:"解答",
+      dataIndex:"explanation",
+      key:"explanation",
+      width: '35%',
     },
     {
         title:"类型",

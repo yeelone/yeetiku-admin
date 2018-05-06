@@ -1,7 +1,7 @@
-const host = 'yeetiku.com'
+const host = 'localhost'
 
 module.exports = {
-  name: 'YEETIKU Admin',
+  name: 'YeeTiku Admin',
   prefix: 'yeetiu Admin',
   footerText: 'YEE TIKU Admin 版权所有 © 2017 由 elone 支持',
   logo: `http://${host}:8080/assets/logo.png`,

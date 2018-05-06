@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'dva'
 import { Form,Select,Button,Input,Icon,Checkbox,Radio,InputNumber,Slider } from 'antd'
 import { browserHistory } from 'react-router'
-
+const { TextArea } = Input
+import styles from './styles.less'
 const FormItem = Form.Item
 const Option = Select.Option
 
@@ -68,6 +69,7 @@ class AddQuestionForm extends React.Component{
                     level: parseInt(values['level'],10),
                     score: values['score'] ,
                     subject: values['subject'] ,
+                    explanation: values['explanation'],
                     type: values['type'] ,
                 }
                 if (values.hasOwnProperty('filling-answers')) data['filling-answers'] = values['filling-answers']
@@ -215,9 +217,9 @@ class AddQuestionForm extends React.Component{
         <div>
             {formItems}
             <FormItem {...formItemLayout} label="操作">
-                        <Button type="dashed" onClick={this.add} style={{ width: '60%' }}>
-                            <Icon type="plus" /> Add field
-                        </Button>
+                <Button type="dashed" onClick={this.add} style={{ width: '60%' }}>
+                    <Icon type="plus" /> Add field
+                </Button>
             </FormItem>
             {/*如果是多选题，显示多选框*/}
             { ( type === 'multiple') ?
@@ -244,10 +246,10 @@ class AddQuestionForm extends React.Component{
         return  (
             <FormItem {...formItemLayout} label="答案">
             {getFieldDecorator(`true_or_false`,{initialValue: true_or_false})(
-                    <RadioGroup>
-                         <Radio key={true} value={true}>正确</Radio>
-                         <Radio key={false} value={false}>错误</Radio>
-                    </RadioGroup>
+                <RadioGroup>
+                        <Radio key={true} value={true}>正确</Radio>
+                        <Radio key={false} value={false}>错误</Radio>
+                </RadioGroup>
             )}
             </FormItem>
         )
@@ -305,13 +307,13 @@ class AddQuestionForm extends React.Component{
                         rules: [{ required: true, message: '请选择题型' }],
                         initialValue: item.type
                     })(
-                            <Select  style={{ width: 120 }} onChange={this.handleTypeChange}>
-                            {
-                                Object.keys(QuestionType).map((item)=>{
-                                    return ( <Option key={item} > {QuestionType[item]}</Option>)
-                                })
-                            }
-                            </Select>
+                        <Select  style={{ width: 120 }} onChange={this.handleTypeChange}>
+                        {
+                            Object.keys(QuestionType).map((item)=>{
+                                return ( <Option key={item} > {QuestionType[item]}</Option>)
+                            })
+                        }
+                        </Select>
                     )}
                     </FormItem>
 
@@ -340,15 +342,23 @@ class AddQuestionForm extends React.Component{
                         rules: [{ required: true, message: '题干' }],
                         initialValue: item.subject
                     })(
-                        <Input type="textarea" rows={8}  style={{ width: '100%', marginRight: 8 }} />
+                        <TextArea type="textarea" rows={8}  style={{ width: '100%', marginRight: 8 }} />
                     )}
                     </FormItem>
 
+                    <FormItem {...formItemLayout} label="解答" >
+                        {getFieldDecorator('explanation', {
+                        rules: [{ required: true, message: "解答" }],
+                        initialValue: item.explanation
+                    })(
+                        <TextArea type="textarea" rows={8}  style={{ width: '100%', marginRight: 8 }} />
+                    )}
+                    </FormItem>
                     {  ( type === 'single' || type === 'multiple') ? this.renderOptions(type,item.options): null  }
                     {  ( type === 'truefalse' )? this.renderTrueFalse(item.true_or_false):null  }
                     {  ( type === 'filling' )? this.renderFilling(item.correct_answers):null }
 
-                    <Button type="primary" htmlType="submit" className="login-form-button">   提交  </Button>
+                    <Button type="primary" htmlType="submit"  className={styles.submit_form_button}>   提交  </Button>
                 </Form>
             </div>
         )

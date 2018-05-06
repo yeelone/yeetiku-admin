@@ -187,7 +187,7 @@ class EditableTagTree extends React.Component {
             <div>
                 <Layout>
                     <Layout>
-                        <Sider>
+                        <Sider style={{background:"#ffffff"}}>
                             <Menu
                                 onClick={this.handleL1Click}
                                 defaultOpenKeys={['sub1']}

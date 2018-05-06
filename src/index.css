@@ -3,3 +3,11 @@ html, body, :global(#root) {
   height: 100%;
   
 }
+
+.ant-upload.ant-upload-select {
+  background-color: aquamarine;
+}
+
+.ant-layout-sider {
+  background: #d9d9d9 !important;
+}
