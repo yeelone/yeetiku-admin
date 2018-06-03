@@ -1,4 +1,4 @@
-const host = 'localhost'
+const host = 'yeetiku.com'
 
 module.exports = {
   name: 'YeeTiku Admin',

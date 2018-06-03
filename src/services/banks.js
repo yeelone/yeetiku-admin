@@ -11,7 +11,7 @@ export async function queryByID(params) {
 
 export async function query (params) {
   return request({
-    url: banks,
+    url: 'admin/'+banks,
     method: 'get',
     data: params,
   })
